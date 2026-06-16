@@ -1,5 +1,6 @@
 # Hugo configuration file
-title: My Site
+baseURL: https://docs.original-web.ru/
+title: ORIGINAL Docs
 
 # import hextra as module
 module:
@@ -7,25 +8,22 @@ module:
     - path: github.com/imfing/hextra
 
 markup:
-  # allow raw html
   goldmark:
     renderer:
       unsafe: true
-
-  # enable hextra syntax highlight
   highlight:
     noClasses: false
 
 menu:
   main:
-    - name: Docs
+    - name: Документация
       pageRef: /docs
       weight: 1
-    - name: About
+    - name: О нас
       pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: orx.agency ↗
+      url: "https://orx.agency"
       weight: 3
     - name: Search
       weight: 4
@@ -33,14 +31,9 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      url: "https://github.com/ТУТ_ТВОЙ_USERNAME"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
   navbar:
@@ -48,9 +41,8 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
 
   editURL:
-    enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    enable: false
